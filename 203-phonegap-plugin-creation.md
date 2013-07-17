@@ -10,7 +10,7 @@ Création d'un plugin android
 
 Un plugin phonegap pour android est en général composé d'au moins 3 fichiers:
 - Un fichier JAVA qui va contenir le code natif du plugin
-- Un fichier javascript qui va permettre de créer des fonction pour appeler le code natif
+- Un fichier javascript qui va permettre de créer des fonctions pour appeler le code natif
 - Un fichier plugin.xml quoi va contenir la description du plugin et des information pour faire le lien entre JAVA et javascript
 
 On va donc créer ces fichiers avec la hiérarchie suivante:
@@ -182,7 +182,7 @@ On ferme les accolades pour fermer la fonction.
 Nous avons donc maintenant un plugin permettant d'envoyer des sms.
 Pour utiliser le plugin en javascript, il ne reste plus qu'à appeler l'objet sms (qu'on a défini dans la balise clobbers):
 
-    widonw.sms.send("+33123456789", "Hello", function(success) {
+    window.sms.send("+33123456789", "Hello", function(success) {
         alert(success);
     }, function(error) {
         alert(error);
